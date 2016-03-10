@@ -3,10 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.toilet.paper.endpoint.impl;
+package org.cdi.issues.endpoint.impl;
 
 import javax.enterprise.context.ApplicationScoped;
-import javax.ws.rs.Produces;
+import javax.enterprise.inject.Produces;
+
 import org.apache.deltaspike.scheduler.spi.Scheduler;
 import org.quartz.Job;
 

@@ -34,7 +34,6 @@ public class App {
         deployment.as(Secured.class);
         deployment.setContextRoot("/api");
         deployment.addPackages(true, "org.cdi.issues.endpoint");
-        deployment.addPackages(true, "org.quartz");
         deployment.addResource(IssuesService.class);
         deployment.addResource(IssuesServiceImpl.class);
         deployment.addClass(HttpStatusExceptionHandler.class);
