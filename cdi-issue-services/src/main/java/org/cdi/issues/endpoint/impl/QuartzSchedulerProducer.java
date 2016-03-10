@@ -16,12 +16,13 @@ import org.quartz.Job;
  * @author salaboy
  */
 
-public class QuartzSchedulerProducer {
-    
-    @Produces
-    @ApplicationScoped
-    protected Scheduler<Job> produceScheduler(Scheduler scheduler)
-    {
-        return scheduler;
-    }
+public class QuartzSchedulerProducer
+{
+
+   @Produces
+   @ApplicationScoped
+   protected Scheduler<Job> produceScheduler(Scheduler scheduler)
+   {
+      return scheduler;
+   }
 }
