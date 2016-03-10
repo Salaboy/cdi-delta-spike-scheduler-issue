@@ -19,6 +19,7 @@ import org.quartz.Job;
 public class QuartzSchedulerProducer
 {
 
+   @SuppressWarnings({ "unchecked", "rawtypes" })
    @Produces
    @ApplicationScoped
    protected Scheduler<Job> produceScheduler(Scheduler scheduler)
